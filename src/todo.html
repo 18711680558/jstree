@@ -1,0 +1,21 @@
+<div>
+    <table class="table todo">
+      <caption>一共有{{size}}条记录</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>名字</th>
+          <th>类别</th>
+          <th>价钱</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  v-for="item in items">
+          <td v-text="$index"></td>
+          <td v-text="item.name"></td>
+          <td v-text="item.type"></td>
+          <td v-text="item.Price"></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

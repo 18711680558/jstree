@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-plugins</title>
+  </head>
+  <body>
+    <script src="node_modules/requirejs/require.js"></script>
+    <script>
+        require.config({
+          packages: [{
+        		name: 'vue',
+        		location: 'node_modules/vue/dist',
+        		main: 'vue'
+        	}]
+        });
+        require(['dist/build'], function(plugins) {
+          new plugins.app({
+            el : 'body',
+            data : {
+              msg : 'Success'
+            }
+          })
+        })
+    </script>
+  </body>
+</html>

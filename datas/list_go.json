@@ -1,0 +1,82 @@
+{
+   "data":[
+       {
+           "id" : "root1",
+           "text" : "Windows(C:)",
+           "icon":"/messge/3.ico",
+            "children" : [
+                    {
+                        "id" : "roots1",
+                        "text" : "个人文件",
+                        "icon":"/messge/1.ico",
+                        "children" : [
+                                {
+                                    "id" : "children1",
+                                    "text" : "私人文件",
+                                    "icon":"/messge/2.ico",
+                                    "leaf" : true
+                                },
+                                {
+                                    "id" : "children2",
+                                    "text" : "公共文件",
+                                    "icon":"/messge/2.ico",
+                                    "leaf" : true
+                                }
+                        ]
+                    },
+                {
+                     "id" : "roots2",
+                     "text" : "我的音乐",
+                    "icon":"/messge/1.ico",
+                     "leaf" : true
+                },
+                {
+                     "id" : "roots3",
+                     "text" : "我的相片",
+                    "icon":"/messge/1.ico",
+                     "leaf" : true
+                }
+            ]
+       },
+       {
+           "id" : "root2",
+           "text" : "LENOVO(D:)",
+           "icon":"/messge/4.ico",
+           "children" : [
+                    {
+                        "id" : "roots4",
+                        "text" : "网络游戏",
+                        "icon":"/messge/1.ico",
+                        "children" : [
+                            {
+                                "id" : "children3",
+                                "text" : "QQ",
+                                "icon":"/messge/5.ico",
+                                "leaf" : true
+                            },
+                            {
+                                "id" : "children4",
+                                "text" : "公共文件",
+                                "icon":"/messge/5.ico",
+                                "leaf" : true
+                            }
+                        ]
+                    },
+                   {
+                         "id" : "roots5",
+                         "text" : "单机游戏",
+                         "icon":"/messge/1.ico",
+                         "leaf" : true
+                    },
+                    {
+                         "id" : "roots6",
+                         "text" : "画画板",
+                         "icon":"/messge/1.ico",
+                         "leaf" : true
+                    }
+        ]
+       }
+   ],
+   "check_callback":true
+        
+}

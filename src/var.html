@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../node_modules/vue/dist/vue.js"></script>
+</head>
+<body>
+
+</body>
+    <script>
+//    // 定义一个混合对象
+//    var myMixin = {
+//      created: function () {
+//        this.hello()
+//      },
+//      methods: {
+//        hello: function () {
+//          console.log('hello from mixin!')
+//        }
+//      }
+//    }
+
+//    var Component = Vue.extend({
+//        mixins: [myMixin]
+//    })
+//    var component = new Component()
+    var mixin = {
+        methods: {
+            foo:function () {
+                console.log('foo')
+            },
+            conflicting:function () {
+                console.log('from mixin')
+            }
+        }
+    }
+    var vm = new Vue({
+        mixins: [mixin],
+        methods: {
+            bar: function () {
+                console.log('bar')
+            },
+            conflicting:function () {
+                console.log('from self')
+            }
+        }
+    })
+    </script>
+</html>
